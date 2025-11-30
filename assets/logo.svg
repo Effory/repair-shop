@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="120" viewBox="0 0 220 120">
+  <rect width="220" height="120" rx="14" fill="#0c374f"/>
+  <!-- chip -->
+  <rect x="18" y="18" width="84" height="84" rx="8" fill="#f4a836" stroke="#0c374f" stroke-width="4"/>
+  <!-- E estilizada -->
+  <path d="M40 42 h36 M40 54 h30 M40 66 h36" stroke="#0c374f" stroke-width="6" stroke-linecap="round"/>
+  <!-- nome ao lado -->
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <text x="110" y="50" fill="#ffffff" font-size="22">Effori</text>
+    <text x="110" y="82" fill="#f4a836" font-size="16">Assistência Técnica</text>
+  </g>
+</svg>

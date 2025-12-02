@@ -141,6 +141,7 @@ body {
     text-align: center;
     transition: 0.3s;
     color: var(--text);
+    text-decoration: none;
 }
 
 .service-card:hover {

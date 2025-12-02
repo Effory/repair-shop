@@ -1,0 +1,188 @@
+/* ============================
+   PALETA E CONFIGURAÇÕES GLOBAIS
+============================ */
+:root {
+    --blue: #0d1b26;
+    --blue-light: #1a3247;
+    --gold: #f4a836;
+    --bg: #0a0f14;
+    --card: #111820;
+    --text: #e8eef2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* ============================
+   NAVBAR
+============================ */
+.navbar {
+    background: var(--blue-light);
+    padding: 15px 0;
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-box img {
+    width: 42px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+/* ============================
+   HERO
+============================ */
+.hero {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: var(--gold);
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.hero-img {
+    width: 320px;
+}
+
+/* ============================
+   GRID DE SERVIÇOS (2x2)
+============================ */
+.services-grid-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* ============================
+   CARDS DE SERVIÇO
+============================ */
+.service-card {
+    position: relative;
+    height: 320px;                     /* maior */
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* overlay escurecendo 50% */
+.service-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.50);      /* 50% ESCURO REAL */
+    z-index: 1;
+}
+
+/* texto */
+.service-card h2,
+.service-card p {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    text-shadow: 0 0 12px rgba(0,0,0,0.9);
+    text-align: center;
+    width: 80%;
+}
+
+.service-card h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.service-card p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* hover */
+.service-card:hover {
+    transform: scale(1.04);
+}
+
+/* ============================
+   IMAGENS DE FUNDO DE CADA CARD
+============================ */
+#manutencao {
+    background-image: url('../assets/servico-manutencao.jpg');
+}
+
+#reparos {
+    background-image: url('../assets/servico-reparos.jpg');
+}
+
+#upgrade {
+    background-image: url('../assets/servico-upgrade.jpg');
+}
+
+#suporte {
+    background-image: url('../assets/servico-suporte.jpg');
+}
+
+/* ============================
+   FOOTER
+============================ */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: var(--blue-light);
+    color: var(--text);
+    margin-top: 60px;
+}

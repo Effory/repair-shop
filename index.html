@@ -25,16 +25,30 @@
   </nav>
 
     <section class="hero">
-        <div class="hero-content">
-            <div>
-                <h1>Suporte técnico para o seu notebook.</h1>
-                <p>Reparo, manutenção e upgrades com qualidade e rapidez.</p>
-                <a href="https://wa.me/5511995149394" class="btn">Solicitar atendimento</a>
-            </div>
+  <div class="hero-content">
+    <div data-animate>
+      <h1>Suporte técnico para o seu notebook.</h1>
+      <p>
+        Diagnóstico técnico, manutenção responsável e upgrades que realmente fazem diferença.
+      </p>
 
-            <img src="assets/laptop-illustration.svg" class="hero-img" alt="Notebook ilustrado" />
-        </div>
-    </section>
+      <a href="https://forms.gle/qNWuNwwEp2BRvrQP7" class="btn">Solicitar atendimento</a>
+
+      <p class="hero-note">
+        Atendimento técnico responsável • Diagnóstico transparente
+      </p>
+    </div>
+
+    <img
+      src="assets/laptop-illustration.svg"
+      class="hero-img"
+      alt="Notebook ilustrado"
+      data-animate
+      class="delay-1"
+    />
+  </div>
+</section>
+
 
     <section class="services" id="servicos">
         <h2>Serviços</h2>
@@ -52,7 +66,7 @@
 
             <a href="servicos.html#upgrade" class="service-card">
                 <h3>⚙ Upgrade</h3>
-                <p>Melhore o desempenho com componentes novos.</p>
+                <p>Troca de componentes (instalação de SSD, RAM, etc.)</p>
             </a>
 
             <a href="servicos.html#suporte" class="service-card">
@@ -61,14 +75,33 @@
             </a>
         </div>
     </section>
-
-    <section class="about" id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>
-            Sou Antonio Effori, tenho 15 anos, sou apaixonado por TI, desenvolvimento de jogos e hardware. Realizando serviços desde a pandemia. Atualmente estou buscando meu certificado pelo <strong>curso profissionalizante EAD</strong> em Assistência Técnica.
-            Trabalho com transparência e qualidade, buscando sempre deixar seu equipamento funcionando como novo.
-        </p>
+    <section class="about-split">
+        <div class="about-box">
+            <h2>Como funciona o atendimento</h2>
+            <p><strong>1.</strong> Solicitação do atendimento pelo formulário</p>
+            <p><strong>2.</strong> Análise e diagnóstico do equipamento</p>
+            <p><strong>3.</strong> Envio de orçamento claro e detalhado</p>
+            <p><strong>4.</strong> Execução do serviço após aprovação</p>
+            <p><strong>5.</strong> Testes finais e entrega do equipamento</p>
+        </div>
+        <div class="help-box">
+            <h2>Por que escolher a Effori?</h2>
+            <p>Diagnóstico técnico antes de qualquer serviço.</p>
+            <p>Transparência total sobre problemas e soluções.</p>
+            <p>Manutenção feita com cuidado e boas práticas.</p>
+            <p>Foco em desempenho, segurança e durabilidade.</p>
+            <p>Atendimento direto, organizado e responsável.</p>
+        </div>
     </section>
+    <section class="about">
+        <h2>O que você pode esperar</h2>
+        <p>✔ Comunicação clara durante todo o processo</p>
+        <p>✔ Diagnóstico real, sem empurrar serviços</p>
+        <p>✔ Equipamento tratado com cuidado</p>
+        <p>✔ Entrega testada e explicada</p>
+    </section>  
+</section>
+
 
     <section class="contact" id="contato">
         <h2>Contato</h2>
@@ -91,3 +124,4 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+<script src="js/animate.js"></script>

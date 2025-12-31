@@ -280,3 +280,77 @@ body {
     stroke-dashoffset: -2000;
   }
 }
+/* =====================================================
+   SERVIÇOS – CONCEITO / INTRO
+===================================================== */
+
+.services-intro {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.services-intro h2 {
+  font-size: 34px;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.services-intro p {
+  font-size: 18px;
+  opacity: 0.85;
+  max-width: 720px;
+  margin: auto;
+}
+
+/* =====================================================
+   CARD ABERTO – SERVIÇO FLEXÍVEL
+===================================================== */
+
+.open-service {
+  background: linear-gradient(
+    135deg,
+    var(--blue-light),
+    var(--card)
+  );
+}
+
+.open-service::before {
+  background: rgba(0,0,0,0.45);
+}
+
+.open-service .card-content h2 {
+  color: var(--gold);
+}
+
+.open-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 26px;
+  background: var(--gold);
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.open-btn:hover {
+  background: #ffcc4d;
+  transform: translateY(-2px);
+}
+
+/* =====================================================
+   AJUSTE DE GRID (5 CARDS)
+===================================================== */
+
+@media (min-width: 769px) {
+  .services-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .open-service {
+    grid-column: 1 / -1;
+    height: 260px;
+  }
+}

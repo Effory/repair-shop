@@ -4,66 +4,81 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Serviços – Effori Assistência Técnica</title>
+
   <link rel="icon" href="assets/logo.svg" />
   <link rel="stylesheet" href="css/style-servicos.css" />
 </head>
 <body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="logo-box">
-        <img src="assets/logo.svg" alt="Logo" />
-        <span>Effori Assistência Técnica</span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="servicos.html">Serviços</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-      </ul>
-    </div>
-  </nav>
 
-  <section class="hero">
-    <div class="hero-content">
-      <div>
-        <h1>Nossos Serviços</h1>
-        <p>Manutenção, reparos, upgrades e suporte profissional.</p>
-      </div>
-      <img src="assets/engrenagens.svg" class="hero-img" alt="Notebook" />
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo-box">
+      <img src="assets/logo.svg" alt="Logo" />
+      <span>Effori Assistência Técnica</span>
     </div>
-  </section>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+    </ul>
+  </div>
+</nav>
 
-  <section class="services-grid-container">
-    <div class="service-card" id="manutencao">
-      <div class="card-content">
-        <h2>🔧 Manutenção</h2>
-        <p>Manutenção preventiva e corretiva para prolongar a vida útil do seu notebook.</p>
-      </div>
+<section class="hero-services">
+<svg class="circuit-bg-svg" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin slice" viewBox="0 0 1600 300">
+  <defs>
+    <linearGradient id="lineGradient" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="var(--blue-light)" />
+      <stop offset="50%" stop-color="var(--gold)" />
+      <stop offset="100%" stop-color="var(--blue-light)" />
+    </linearGradient>
+  </defs>
+  <g class="circuit-lines">
+    <path class="line1" d="M0 75 L400 75 400 150 800 150 800 75 1200 75 1200 150 1600 150" />
+    <path class="line2" d="M0 225 L300 225 300 100 700 100 700 225 1100 225 1100 100 1600 100" />
+  </g>
+</svg>
+  <div class="hero-content">
+    <h1>Nossos Serviços</h1>
+    <p>Manutenção, reparos, upgrades e suporte técnico profissional.</p>
+  </div>
+  <div class="hero-block"></div>
+</section>
+
+
+
+<section class="services-grid-container">
+
+  <div class="service-card" id="manutencao" data-animate>
+    <div class="card-content">
+      <h2>🔧 Manutenção</h2>
+      <p>Limpeza interna, troca de pasta térmica e prevenção de falhas.</p>
     </div>
+  </div>
 
-    <div class="service-card" id="reparos">
-      <div class="card-content">
-        <h2>🖥 Reparos</h2>
-        <p>Reparo de peças e solução de falhas com diagnóstico preciso.</p>
-      </div>
+  <div class="service-card" id="reparos" data-animate>
+    <div class="card-content">
+      <h2>🖥 Reparos</h2>
+      <p>Correção de defeitos físicos e eletrônicos com diagnóstico preciso.</p>
     </div>
+  </div>
 
-    <div class="service-card" id="upgrade">
-      <div class="card-content">
-        <h2>⚙ Upgrade</h2>
-        <p>Upgrade de SSD, RAM e otimizações para desempenho superior.</p>
-      </div>
+  <div class="service-card" id="upgrade" data-animate>
+    <div class="card-content">
+      <h2>⚙ Upgrade</h2>
+      <p>SSD, memória RAM e otimizações para máximo desempenho.</p>
     </div>
+  </div>
 
-    <div class="service-card" id="suporte">
-      <div class="card-content">
-        <h2>📡 Suporte</h2>
-        <p>Suporte geral: configuração, limpeza, formatação e ajuda técnica.</p>
-      </div>
+  <div class="service-card" id="suporte" data-animate>
+    <div class="card-content">
+      <h2>📡 Suporte</h2>
+      <p>Formatação, configurações, sistemas e ajuda técnica geral.</p>
     </div>
-  </section>
+  </div>
 
-  <footer>
-    © 2025 Effori Assistência Técnica.
-  </footer>
+</section>
 </body>
 </html>
+<script src="js/pcb.js"></script>
+

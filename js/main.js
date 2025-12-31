@@ -63,7 +63,6 @@ prevBtn.addEventListener('click', () => {
   updateSlider();
 });
 
-/* autoplay suave */
 setInterval(() => {
   index = (index + 1) % total;
   updateSlider();

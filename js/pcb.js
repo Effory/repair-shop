@@ -8,7 +8,6 @@ const H = () => svg.clientHeight;
 let activeLines = 0;
 const MAX_LINES = 2;
 
-/* cria via temporária */
 function createVia(x, y) {
   const c = document.createElementNS(NS, 'circle');
   c.setAttribute('cx', x);
@@ -23,7 +22,6 @@ function createVia(x, y) {
   }, 900);
 }
 
-/* calcula Y evitando o texto */
 function safeY() {
   const top = block.offsetTop;
   const bottom = top + block.offsetHeight;
@@ -36,7 +34,6 @@ function safeY() {
   return y;
 }
 
-/* cria trilha */
 function createTrace() {
   if (activeLines >= MAX_LINES) return;
   activeLines++;
@@ -62,7 +59,6 @@ function createTrace() {
   path.style.strokeDasharray = len;
   path.style.strokeDashoffset = len;
 
-  /* desenha a trilha */
   path.animate(
     [
       { strokeDashoffset: len },
@@ -75,13 +71,11 @@ function createTrace() {
     }
   );
 
-  /* via aparece APÓS a curva */
   setTimeout(() => {
     createVia(midX, y);
     createVia(midX, bendY);
   }, 1600);
 
-  /* fluxo contínuo */
   setTimeout(() => {
     path.animate(
       [
@@ -96,7 +90,6 @@ function createTrace() {
     );
   }, 2200);
 
-  /* remove linha depois */
   setTimeout(() => {
     path.style.transition = "opacity 1.2s";
     path.style.opacity = 0;
@@ -107,14 +100,12 @@ function createTrace() {
   }, 18000);
 }
 
-/* loop calmo */
 setInterval(() => {
   if (activeLines < MAX_LINES) {
     createTrace();
   }
 }, 2600);
 
-/* init */
 function init() {
   svg.setAttribute('viewBox', `0 0 ${W()} ${H()}`);
 }

@@ -1,5 +1,5 @@
 /* =====================================================
-   VARIÁVEIS DE TEMA
+   VARiABLES
 ===================================================== */
 :root {
   --blue: #0d1b26;
@@ -71,11 +71,11 @@ body {
 }
 
 /* =====================================================
-   HERO – PCB ANIMADO (NOSSOS SERVIÇOS)
+   HERO – PCB
 ===================================================== */
 .hero-services {
   position: relative;
-  min-height: 60vh;          /* ocupa o centro da tela */
+  min-height: 60vh;          
   background: var(--card);
   overflow: hidden;
   display: flex;
@@ -98,7 +98,6 @@ body {
   z-index: 1;
 }
 
-/* trilhas */
 .pcb-svg path {
   fill: none;
   stroke: var(--blue-light);
@@ -108,7 +107,6 @@ body {
   opacity: 0.9;
 }
 
-/* vias (pontos nas interseções) */
 .pcb-svg circle {
   fill: var(--gold);
   opacity: 0.85;
@@ -116,7 +114,6 @@ body {
   animation: via-pulse 3.5s ease-in-out infinite;
 }
 
-/* pulso mais calmo */
 @keyframes via-pulse {
   0%   { transform: scale(0.9); opacity: 0.5; }
   50%  { transform: scale(1.2); opacity: 1; }
@@ -126,7 +123,6 @@ body {
   pointer-events: none;
 }
 
-/* zona proibida visual (usada pelo JS) */
 .hero-block {
   position: absolute;
   left: 80px;
@@ -134,8 +130,6 @@ body {
   width: 520px;
   height: 160px;
 }
-
-
 
 .hero-content h1 {
   font-size: 46px;
@@ -151,7 +145,7 @@ body {
 /* =====================================================
    SVG PCB – FUNDO ANIMADO
 ===================================================== */
-/* velocidades diferentes */
+
 .pcb-svg path:nth-of-type(1) { animation-duration: 2.4s; }
 .pcb-svg path:nth-of-type(2) { animation-duration: 3s; }
 .pcb-svg path:nth-of-type(3) { animation-duration: 2.8s; }
@@ -237,7 +231,6 @@ body {
   color: #fff;
 }
 
-/* IMAGENS */
 #manutencao { background-image: url('../assets/servico-manutencao.jpg'); }
 #reparos    { background-image: url('../assets/servico-reparos.jpg'); }
 #upgrade    { background-image: url('../assets/servico-upgrade.jpg'); }
@@ -256,7 +249,6 @@ body {
     grid-template-columns: 1fr;
   }
 }
-/* circuito de fundo */
 .circuit-bg-svg {
   position: absolute;
   inset: 0;
@@ -277,7 +269,6 @@ body {
   animation: drawCircuit 8s linear infinite;
 }
 
-/* animação continua */
 @keyframes drawCircuit {
   0% {
     stroke-dashoffset: 2000;
